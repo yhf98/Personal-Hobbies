@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+@using ExcelHelper.Models
+<h2>展示数据</h2>
+
+<table>
+    <tr>
+        <td>ID</td><td>NAME</td> <td>AGE</td>
+    </tr>
+    @foreach (UserInfo u in ViewBag.list)
+    {
+        <tr>
+            <td>@u.ID</td>
+            <td>@u.Name</td>
+            <td>@u.Age</td>
+        </tr>
+    }
+</table>
