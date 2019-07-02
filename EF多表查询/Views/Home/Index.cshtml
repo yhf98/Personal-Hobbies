@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>多表查询</h2>
+
+<table>
+    <tr>
+        <td>
+            ID
+        </td>
+        <td>
+            Name
+        </td>
+        <td>
+            Age
+        </td>
+    </tr>
+
+    @foreach (var one in ViewBag.dyObject)
+    {
+        <tr>
+            <td>
+                @one.StuID
+            </td>
+            <td>
+                @one.StuName
+            </td>
+            <td>
+                @one.ClassName
+            </td>
+
+        </tr>
+    }
+</table>
+

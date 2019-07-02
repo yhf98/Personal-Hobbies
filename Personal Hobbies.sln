@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Personal Hobbies", "Persona
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelHelper", "ExcelHelper\ExcelHelper.csproj", "{16716D52-E740-4FA3-9B40-B9C592FAAD57}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF多表查询", "EF多表查询\EF多表查询.csproj", "{3BDA4538-529A-4485-9521-8A6E42A43F94}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +19,17 @@ Global
 		{16716D52-E740-4FA3-9B40-B9C592FAAD57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16716D52-E740-4FA3-9B40-B9C592FAAD57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16716D52-E740-4FA3-9B40-B9C592FAAD57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BDA4538-529A-4485-9521-8A6E42A43F94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BDA4538-529A-4485-9521-8A6E42A43F94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BDA4538-529A-4485-9521-8A6E42A43F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BDA4538-529A-4485-9521-8A6E42A43F94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{16716D52-E740-4FA3-9B40-B9C592FAAD57} = {6672BBD0-63AE-4099-B0CE-27DD49773B6C}
+		{3BDA4538-529A-4485-9521-8A6E42A43F94} = {6672BBD0-63AE-4099-B0CE-27DD49773B6C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F2133788-6408-4C89-BB50-EA30510B83B4}
