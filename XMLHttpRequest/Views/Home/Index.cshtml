@@ -1,0 +1,87 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>练习XMLHttpRequest</h2>
+
+<button id="xml">点击</button>
+
+<script>
+
+    var btn = document.getElementById("xml");
+    btn.onclick = function () {
+        //let xhr = new XMLHttpRequest();
+        //// 初始化请求
+        //xhr.open('GET', '/Home/AA?name=姚恒锋&pwd=123', true);
+        //// 设置期望的返回数据类型 'json' 'text' 'document' ...
+        //xhr.responseType = 'json';
+        //// 设置请求头
+        //xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        //  // 请求成功回调函数
+        //xhr.onload = e => {
+        //    alert(xhr.responseText())
+        //    alert('request success');
+        //};
+        //// 请求结束
+        //xhr.onloadend = e => {
+        //    alert('request loadend');
+        //};
+        //// 请求出错
+        //xhr.onerror = e => {
+        //    alert('request error');
+        //};
+        //// 请求超时
+        //xhr.ontimeout = e => {
+        //    alert('request timeout');
+        //};
+        //xhr.timeout = 0; // 设置超时时间,0表示永不超时
+
+        //// 返回数据
+        //xhr.responseText = data => {
+        //    alert(data)
+        //}
+        //// 发送请求
+        //xhr.send(null);
+
+    //var xmlhttp;
+
+    //if (window.XMLHttpRequest) {
+    //    xmlhttp = new XMLHttpRequest();
+    //    xmlhttp.onreadystatechange = function () {
+
+    //        xmlhttp.open("GET", "/Home/AA?name=姚恒锋&pwd=123", true);
+    //        xmlhttp.send(null);
+    //    }
+    //}
+
+      var nubList = [
+                {
+                    expressId: "00001", //快递单号ID
+                    expressNum: "数据1"
+                },
+                {
+                    expressId: "00002", //快递单号ID
+                    expressNum: "数据2"
+                },
+                {
+                    expressId: "00003", //快递单号ID
+                    expressNum: "数据3"
+                },
+                {
+                    expressId: "00004", //快递单号ID
+                    expressNum: "数据4"
+                }
+            ];
+
+            var nub = nubList.find(nub => nub.expressId == "00002");
+            alert(nub.expressNum);
+            
+            var nub1 = nubList.filter(nub => nub.expressId == "00002");
+            alert(nub1[0].expressNum);
+
+
+
+    }
+</script>
+
